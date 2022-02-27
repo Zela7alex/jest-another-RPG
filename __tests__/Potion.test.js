@@ -1,3 +1,4 @@
+// Test that requires a health Potion with name and value
 const Potion = require('../lib/Potion.js');
 
 test('creates a health potion object', () => {
@@ -7,6 +8,7 @@ test('creates a health potion object', () => {
     expect(potion.value).toEqual(expect.any(Number))
 });
 
+// Test that requires a random health Potion with values 
 test('creates a random potion object', () => {
     const potion = new Potion();
 
